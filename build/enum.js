@@ -1,0 +1,30 @@
+"use strict";
+var dias;
+(function (dias) {
+    dias[dias["domingo"] = 0] = "domingo";
+    dias[dias["segunda"] = 1] = "segunda";
+    dias[dias["terca"] = 2] = "terca";
+    dias[dias["quarta"] = 3] = "quarta";
+    dias[dias["quinta"] = 4] = "quinta";
+    dias[dias["sexta"] = 5] = "sexta";
+    dias[dias["sabado"] = 6] = "sabado";
+})(dias || (dias = {}));
+console.log(dias.quinta);
+console.log(dias.domingo);
+console.log(dias["domingo"]);
+console.log(dias[1]);
+const date = new Date();
+console.log(date);
+console.log(date.getDay());
+console.log(dias[date.getDay()]);
+var cores;
+(function (cores) {
+    cores["branco"] = "#fff";
+    cores["preto"] = "#000";
+    cores["vermelho"] = "#f00";
+    cores["verde"] = "#0f0";
+    cores["azul"] = "#00f";
+})(cores || (cores = {}));
+console.log(cores.branco);
+console.log(cores["branco"]);
+let corSelecionada = cores.preto;

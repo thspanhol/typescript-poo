@@ -1,0 +1,10 @@
+"use strict";
+let nvalor;
+let svalor;
+let uvalor;
+uvalor = 10;
+nvalor = uvalor;
+svalor = "77";
+nvalor = Number.parseInt(svalor);
+console.log(svalor);
+console.log(nvalor);
