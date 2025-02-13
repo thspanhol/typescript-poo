@@ -5,6 +5,7 @@ class User {
     name;
     _password;
     id;
+    static testeStatic = "Static String";
     constructor(name, password) {
         this.name = name;
         this._password = password;

@@ -22,6 +22,10 @@ class UserPJ extends User {
     }
 }
 
+console.log(User.testeStatic);
+User.testeStatic = "Edit Static";
+console.log(User.testeStatic);
+
 const pj = new UserPJ("Thales PJ", "123", "456");
 const pf = new UserPF("Thales PF", "789", "789");
 
@@ -29,7 +33,6 @@ const pf = new UserPF("Thales PF", "789", "789");
 pj.password = "741";
 // get da classe User
 console.log(pj.password);
-
 
 //pj.info();
 //pf.info();

@@ -3,6 +3,7 @@ export abstract class User {
     private name: string;
     private _password: string;
     private readonly id: number;
+    static testeStatic: string = "Static String";
 
     constructor(name: string, password: string) {
         this.name = name;
