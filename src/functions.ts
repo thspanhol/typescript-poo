@@ -47,7 +47,9 @@ const user = {
     age: 28
 }
 
-const usersData = ({firstName, lastName, age}: {firstName: string; lastName: string; age: number}): string => `O usuário ${firstName} ${lastName} tem ${age} anos.`;
+const usersData = ({firstName, lastName, age}: {firstName: string; lastName: string; age: number}): string => {
+    return `O usuário ${firstName} ${lastName} tem ${age} anos.`;
+}
 
 console.log(usersData(user));
 

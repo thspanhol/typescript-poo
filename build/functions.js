@@ -36,5 +36,7 @@ const user = {
     lastName: "Spanhol",
     age: 28
 };
-const usersData = ({ firstName, lastName, age }) => `O usuário ${firstName} ${lastName} tem ${age} anos.`;
+const usersData = ({ firstName, lastName, age }) => {
+    return `O usuário ${firstName} ${lastName} tem ${age} anos.`;
+};
 console.log(usersData(user));
